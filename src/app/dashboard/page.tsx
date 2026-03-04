@@ -259,7 +259,7 @@ export default function DashboardPage() {
                   onChange={(e) => setForm({ ...form, synopsis: e.target.value })}
                   rows={3}
                   className="w-full bg-sf-bg border border-sf-border rounded-xl px-4 py-3 text-sf-text placeholder-sf-muted focus:outline-none focus:border-sf-primary transition-colors resize-none"
-                  placeholder="Mô tả ngắn về câu chuyện (AI sẽ dùng thông tin này để giữ ngữ cảnh)"
+                  placeholder="Mô tả ngắn về câu chuyện"
                 />
               </div>
 
