@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  background-color: #2E3440;
+  color: #ECEFF4;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #3B4252; }
+::-webkit-scrollbar-thumb { background: #4C566A; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #81A1C1; }
+
+/* Story editor textarea */
+.story-editor {
+  font-family: 'Georgia', 'Cambria', serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #ECEFF4;
+  background: transparent;
+  resize: none;
+  outline: none;
+  width: 100%;
+  min-height: 500px;
+  caret-color: #88C0D0;
+}
+
+.story-editor::placeholder {
+  color: #4C566A;
+  font-style: italic;
+}
+
+/* Shimmer loading */
+.shimmer {
+  background: linear-gradient(90deg, #434C5E 25%, #4C566A 50%, #434C5E 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #88C0D0 0%, #B48EAD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass card */
+.glass {
+  background: rgba(59, 66, 82, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(76, 86, 106, 0.5);
+}
+
+/* Prose content display */
+.prose-story {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #D8DEE9;
+}
+
+.prose-story p { margin-bottom: 1em; text-indent: 1.5em; }
+.prose-story p:first-child { text-indent: 0; }
