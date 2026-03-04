@@ -333,7 +333,7 @@ export default function ChapterEditorPage() {
                   value={aiPrompt}
                   onChange={(e) => setAiPrompt(e.target.value)}
                   rows={3}
-                  disabled={generateMode === 'summarize'}
+                  // disabled={generateMode === 'summarize'}
                   className="w-full bg-sf-bg border border-sf-border rounded-xl px-3 py-2.5 text-sf-text placeholder-sf-muted focus:outline-none focus:border-sf-primary text-sm resize-none transition-colors disabled:opacity-50"
                   placeholder={
                     generateMode === 'continue' ? 'Ví dụ: thêm tình tiết bí ẩn, nhân vật A xuất hiện...'
